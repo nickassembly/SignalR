@@ -21,12 +21,13 @@ namespace Scaffold.Web
 
             app.UseRouting();
 
-            app.UseDefaultFiles(); //index.html
-            app.UseStaticFiles();
-
             app.UseEndpoints(configure => {
                 configure.MapHub<ViewHub>("/hub/view");
             });
+            
+            app.UseDefaultFiles(); //index.html
+            app.UseStaticFiles();
+
         }
     }
 }
