@@ -7,9 +7,9 @@ var counter = document.getElementById("viewCounter");
 
 // create connection
 let connection = new signalR.HubConnectionBuilder()
-    .withUrl("/hubs/view", {
-        transport: signalR.HttpTransportType.WebSockets |
-            signalR.HttpTransportType.ServerSentEvents
+    .withUrl("/hub/view", {
+        transport: signalR.HttpTransportType.WebSockets | 
+        signalR.HttpTransportType.ServerSentEvents 
     })
     .build();
 
