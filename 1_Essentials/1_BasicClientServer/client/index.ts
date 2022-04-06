@@ -2,6 +2,7 @@ import * as signalR from "@microsoft/signalr";
 
 // create connection
 let connection = new signalR.HubConnectionBuilder()
+.configureLogging(signalR.LogLevel.Trace)
 .withUrl("/hub/view")
 .build();
 
