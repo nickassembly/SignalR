@@ -17,7 +17,7 @@ btn.addEventListener("click", function (evt) {
 connection.on("incrementView", (val) => {
     viewCountSpan.innerText = val;
 
-    if (val % 10 === 0) connection.off("incrementView");
+    if(val % 10 === 0) connection.off("incrementView");
 });
 
 // start the connection
