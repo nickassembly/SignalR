@@ -23,7 +23,7 @@ public class VoteManager : IVoteManager
     {
         votes[voteFor]++;
 
-        // notify
+        // notify hubcontext that we need a list of clients
         await hubContext.Clients.All.SendAsync("updateVotes", votes);
     }
 
