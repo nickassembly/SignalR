@@ -11,7 +11,7 @@ public class ViewHub : Hub<IHubClient>
     {
         ViewCount++;
 
-        await this.Clients.All.ViewCountUpdate(ViewCount);
+        await this.Clients.All.NewViewCount(ViewCount);
     }
 }
 
