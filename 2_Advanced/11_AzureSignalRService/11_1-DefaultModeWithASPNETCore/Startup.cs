@@ -19,7 +19,7 @@ namespace Scaffold.Web
         {
             // STEP 1: connection string to azure signalr service
             //    - Get from configuration! 
-            var connectionString = "";
+            var connectionString = "Endpoint=https://signalr-master-test1.service.signalr.net;AccessKey=F/PTOpqo/FtVWK0vwUtRT2EirFkVxvAaKNQxDatRzlg=;Version=1.0;";
             
             // STEP 2: Add Azure SignalR Server
             services.AddSignalR().AddAzureSignalR(connectionString);
